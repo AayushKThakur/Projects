@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>VS Code</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: grey !important;
+        text-decoration: none;
+        font-size: 25px;
+        border-bottom: 1px solid grey;
+      }
+      .navbar-left {
+        /* background-color: aqua; */
+      }
+      .navbar-right {
+        /* background-color: rgb(204, 168, 241); */
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+      }
+      .navbar-right a:link,
+      .navbar-right a:visited,
+      .navbar-right a:active {
+        color: grey !important;
+        text-decoration: none;
+      }
+      .navbar-right a:hover {
+        color: #387ed1 !important; /* Zerodha blue */
+        text-decoration: none;
+      }
+      .landing-image {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+      .landing-heading-text {
+        text-align: center;
+        font-size: 50px;
+      }
+      .landing-subheading-text {
+        text-align: center;
+        font-size: 30px;
+      }
+      .landing-text {
+        text-align: center;
+      }
+
+      .sign-up {
+        display: inline-block;
+        background-color: #387ed1;
+        color: white !important;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 26px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .hamburger-menu {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .hamburger-menu span {
+        display: block;
+        width: 28px;
+        height: 4px;
+        background: #333;
+        margin: 4px 0;
+        border-radius: 2px;
+      }
+      body,
+      .landing-heading-text,
+      .landing-subheading-text,
+      .landing-text {
+        color: #424242 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-left">
+        <img
+          width="175"
+          src="https://zerodha.com/static/images/logo.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="navbar-right">
+        <span><a href="">Signup</a> </span>
+        <span><a href="">About</a> </span>
+        <span><a href="">Products</a> </span>
+        <span><a href="">Pricing</a> </span>
+        <span><a href="">Support</a> </span>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-image">
+      <img
+        src="https://zerodha.com/static/images/landing.png"
+        alt="landing image"
+        width="1000px
+        "
+      />
+    </div>
+    <div class="landing-text">
+      <h1 class="landing-heading-text">Invest in everything</h1>
+      <p class="landing-subheading-text">
+        Online platform to invest in stocks, derivatives, mutual funds, ETFs,
+        bonds, and more.
+      </p>
+      <a href="#" class="sign-up">Sign up for free</a>
+    </div>
+  </body>
+</html>

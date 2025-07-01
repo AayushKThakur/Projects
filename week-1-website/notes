@@ -1,0 +1,31 @@
+ <!-- 
+        1. div, span
+        2. head
+        3. body
+        4. h1, h2, h3, h4, h5, h6
+        5. b,i,u
+        6. a
+        7. img
+        8. inpout
+        9. button
+        10. br
+        11. p
+        12. ul, ol, li
+        13. table, tr, td, th
+        14. form, input, textarea, button
+        15. id, class
+        16. style
+        -->
+        <!-- 
+        CSS
+        inline, internal, external
+        color
+        background-color
+        font-size
+        margin
+        padding
+        border
+        class, id
+        flexbox; display: flex;justify-content: flex start/flex end/center/space-between/space-around
+        -->
+         
