@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Todo!</title>
+    </head>
+
+    <body>
+        <input type="text" placeholder="Enter your task">
+        <button onclick="addTodo()">Add ToDo!</button>
+    </body>
+    <script>
+        let ctr=1;
+        function addTodo(){
+            const inputEl = document.querySelector("input");
+            const value = inputEl.value;
+
+            const newDivEl = document.createElement("div");
+            newDivEl.setAttribute("id", "todo-" + ctr);
+
+            // newDivEl.innerHTML = value; //only adds value and no delte functionality
+
+            newDivEl.innerHTML = "<div>" + value + "</div> <button onclick='deleteTodo(" + ctr + ")'>Delete</button>"
+            // newDivEl.innerHTML = `<div>${value}</div> <button onclick="deleteTodo(${ctr})">Delete</button>`;
+
+            
+            document.querySelector("body").appendChild(newDivEl);
+
+            ctr = ctr + 1;
+            inputEl.value = "";
+
+        }
+
+        function deleteTodo(index){
+            const element = document.getElementById( "todo-" + index);
+            element.parentNode.removeChild(element);
+
+        }
+    </script>
+</html>
