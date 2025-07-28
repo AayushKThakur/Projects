@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Todo!</title>
+        <title>Simplest Todo!</title>
     </head>
 
     <body>
@@ -16,7 +16,7 @@
             const newDivEl = document.createElement("div");
             newDivEl.setAttribute("id", "todo-" + ctr);
 
-            // newDivEl.innerHTML = value; //only adds value and no delte functionality
+            // newDivEl.innerHTML = value; //only adds value and no delete functionality
 
             newDivEl.innerHTML = "<div>" + value + "</div> <button onclick='deleteTodo(" + ctr + ")'>Delete</button>"
             // newDivEl.innerHTML = `<div>${value}</div> <button onclick="deleteTodo(${ctr})">Delete</button>`;
