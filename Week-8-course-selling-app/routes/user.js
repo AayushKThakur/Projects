@@ -15,6 +15,7 @@ userRouter.post("/signin", async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 });
+
 userRouter.get("/purchases", async (req, res) => {
   res.json({
     message: "courses purchased by user endpoint",
