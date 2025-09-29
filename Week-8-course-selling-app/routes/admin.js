@@ -1,5 +1,6 @@
 const { Router } = require("express");
-const userRouter = Router();
+const adminRouter = Router();
+const adminModel = require("../db");
 
 adminRouter.post("/signup", async (req, res) => {
   const username = req.body.username;
@@ -17,7 +18,7 @@ adminRouter.post("/signin", async (req, res) => {
 
 adminRouter.post("/course", async (req, res) => {
   res.json({
-    message: "signup endpoint",
+    message: "signin endpoint",
   });
 });
 

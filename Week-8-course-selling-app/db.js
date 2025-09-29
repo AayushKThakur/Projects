@@ -1,42 +1,43 @@
-const { Schema } = require("mongoose");
-
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
 require("dotenv").config();
-
-mongoose.connect(process.env.MONGO_URI);
 
 const userSchema = new Schema({
   email: { type: String, unique: true },
   password: String,
-  first_name: String,
-  last_name: String,
+  firstName: String,
+  lastName: String,
 });
 
 const adminSchema = new Schema({
   email: { type: String, unique: true },
   password: String,
-  first_name: String,
-  last_name: String,
+  firstName: String,
+  lastName: String,
 });
 
 const courseSchema = new Schema({
-  email: { type: String, unique: true },
-  password: String,
-  first_name: String,
-  last_name: String,
+  title: String,
+  description: String,
+  price: Number,
+  imageUrl: String,
+  creatorId: ObjectId,
 });
 
 const purchaseSchema = new Schema({
-  email: { type: String, unique: true },
-  password: String,
-  first_name: String,
-  last_name: String,
+  userId: ObjectId,
+  courseId: ObjectId,
 });
 
-const userModel = mongoose.model("user", User);
-const adminModel = mongoose.model("todos", Todo);
+const userModel = mongoose.model("user", userSchema);
+const adminModel = mongoose.model("admin", adminSchema);
+const courseModel = mongoose.model("course", courseSchema);
+const purchaseModel = mongoose.model("purchase", purchaseSchema);
 
 module.exports = {
-  UserModel: UserModel,
-  TodoModel: TodoModel,
+  userModel: userModel,
+  adminModel: adminModel,
+  userModel: userModel,
+  userModel: userModel,
 };
