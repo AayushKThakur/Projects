@@ -2,6 +2,7 @@ const { Router } = require("express");
 const { userModel } = require("../db");
 const jwt = require("jsonwebtoken");
 const JWT_USER_PASSWORD = process.env.JWT_USER_PASSWORD;
+const { userMiddleware } = require("../middleware/user");
 
 const userRouter = Router();
 
