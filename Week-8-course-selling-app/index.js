@@ -14,6 +14,10 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/admin", adminRouter);
 app.use("/api/v1/course", courseRouter);
 
+app.get("/", (res, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 async function main() {
   await mongoose.connect(process.env.MONGO_URI);
   app.listen(3000);
